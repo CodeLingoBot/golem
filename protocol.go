@@ -99,12 +99,12 @@ func (_ *DefaultJSONProtocol) MarshalAndPack(name string, structPtr interface{})
 	}
 }
 
-// Return TextMode because JSON is transmitted using the text mode of WebSockets.
+// GetReadMode returns TextMode because JSON is transmitted using the text mode of WebSockets.
 func (_ *DefaultJSONProtocol) GetReadMode() int {
 	return TextMode
 }
 
-// Return TextMode because JSON is transmitted using the text mode of WebSockets.
+// GetWriteMode returns TextMode because JSON is transmitted using the text mode of WebSockets.
 func (_ *DefaultJSONProtocol) GetWriteMode() int {
 	return TextMode
 }

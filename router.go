@@ -283,7 +283,7 @@ func (router *Router) OnClose(callback interface{}) error { //func(*Connection))
 	return nil
 }
 
-// OnConnection sets the callback, that is called when a websocket connection
+// OnConnect sets the callback, that is called when a websocket connection
 // was successfully established, it is therefore called after the handshake.
 // It accept function of the type func(*Connection, *http.Request) by default or functions
 // taking extended connection types if previously registered.

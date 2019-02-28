@@ -260,7 +260,7 @@ func (rm *RoomManager) Stop() {
 	rm.stop <- true
 }
 
-// Remove connections from a particular room and delete the room
+// Destroy removes connections from a particular room and delete the room
 func (rm *RoomManager) Destroy(name string) {
 	rm.destroy <- name
 }
